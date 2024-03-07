@@ -1,4 +1,4 @@
 joblib
-sklearn
 category_encoders
 pandas
+streamlit
