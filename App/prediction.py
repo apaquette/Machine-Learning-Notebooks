@@ -1,9 +1,4 @@
-try:
-    import joblib
-except:
-    !pip install joblib
-    import joblib
-
+import joblib
 from sklearn.preprocessing import RobustScaler
 import category_encoders as ce
 import pandas as pd
