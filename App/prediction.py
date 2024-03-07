@@ -1,11 +1,12 @@
 import joblib
 import category_encoders as ce
 import pandas as pd
+import os
 
 # Load the model, encoder, and scaler
-gnb = joblib.load("gb_model.sav")
-encoder = joblib.load("model_encoder.sav")
-scaler = joblib.load("model_scaler.sav")
+gnb = joblib.load(os.path.join(os.path.dirname(__file__), 'gb_model.sav'))
+encoder = joblib.load(os.path.join(os.path.dirname(__file__), 'model_encoder.sav'))
+scaler = joblib.load(os.path.join(os.path.dirname(__file__), 'model_scaler.sav'))
 
 categorical = ['Gender', 'Smoking', 'Hx Smoking', 'Hx Radiothreapy', 'Thyroid Function', 'Physical Examination', 'Adenopathy', 'Pathology', 'Focality', 'Risk', 'T', 'N', 'M', 'Stage', 'Response']
 
