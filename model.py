@@ -20,21 +20,28 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.3, rando
 categorical = [col for col in X_train.columns if X_train[col].dtypes == 'O']
 numerical = [col for col in X_train.columns if X_train[col].dtypes != 'O']
 
+# ENCODE
 encoder = ce.OneHotEncoder(cols=categorical)
 X_train = encoder.fit_transform(X_train)
 X_test = encoder.transform(X_test)
+joblib.dump(encoder, "model_encoder.sav")   # serialize encoder
+
 
 cols = X_train.columns
 
+# SCALER
 scaler = RobustScaler()
 
 X_train = scaler.fit_transform(X_train)
 X_test = scaler.transform(X_test)
 
+joblib.dump(scaler, "model_scaler.sav") # serialize scaler
+
 X_train = pd.DataFrame(X_train, columns=[cols])
 X_test = pd.DataFrame(X_test, columns=[cols])
 
+# MODEL
 model = GaussianNB()
 model.fit(X_train, y_train)
 
-joblib.dump(model, "gb_model.sav")
+joblib.dump(model, "gb_model.sav")  # serialize model
