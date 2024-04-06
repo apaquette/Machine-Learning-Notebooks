@@ -6,3 +6,6 @@ This notebook modifies the Naive Bayes Classifier in Python by Prashant Banerjee
 [Naive Bayes Classifier in Python](https://www.kaggle.com/code/prashant111/naive-bayes-classifier-in-python)
 
 [Differentiated Thyroid Cancer Recurrence](https://www.kaggle.com/datasets/joebeachcapital/differentiated-thyroid-cancer-recurrence)
+
+
+A live deployment of the model is available [here](https://bayesianclassifiers-apaquette.streamlit.app/)
