@@ -10,7 +10,7 @@ This repository is a collection of notebooks showcasing my learning process thro
 [Differentiated Thyroid Cancer Recurrence](https://www.kaggle.com/datasets/joebeachcapital/differentiated-thyroid-cancer-recurrence)
 
 
-A live deployment of the model is available [here](https://bayesianclassifiers-apaquette.streamlit.app/)
+A live deployment of the model is available here: https://bayesianclassifiers-apaquette.streamlit.app/
 
 
 ## 2. Support Vector Machine
