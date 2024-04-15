@@ -25,3 +25,9 @@ A live deployment of the model is available here: https://bayesianclassifiers-ap
 
 
 ## 4. k-Means Clustering
+
+[Clustering Penguins Species (K-means Clustering)](https://www.kaggle.com/code/youssefaboelwafa/clustering-penguins-species-k-means-clustering)
+
+## 5. Feedforward Neural Network
+
+[Phishing Url](https://www.kaggle.com/datasets/hemanthpingali/phishing-url?resource=download)
